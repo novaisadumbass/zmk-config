@@ -1,0 +1,5 @@
+config SHIELD_ERGONAUT_LEFT
+    def_bool $(shields_list_contains,ergonaut_left)
+
+config SHIELD_ERGONAUT_RIGHT
+    def_bool $(shields_list_contains,ergonaut_right)
