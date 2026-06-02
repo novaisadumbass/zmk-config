@@ -39,7 +39,7 @@ layers:
   - {t: \, h: RIGHT ALT}
   - {t: ↹, h: NUM}
   - {t: ESCAPE, h: SYM}
-  - {t: ␣, h: toggle}
+  - ␣
   - ⏎
   - {t: BACKSPACE, h: SYM}
   - {t: ⌦, h: NUM}
