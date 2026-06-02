@@ -14,8 +14,8 @@ layers:
   - P
   - {t: ']', h: '4'}
   - Shift
-  - {t: A, h: toggle}
-  - {t: S, h: toggle}
+  - A
+  - S
   - D
   - F
   - G
