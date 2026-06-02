@@ -48,7 +48,7 @@
             display-name = "NUM";
             bindings = <
 &trans  &kp KP_SLASH     &kp KP_N7  &kp KP_N8  &kp KP_N9  &kp KP_MINUS  &kp HOME      &kp PAGE_DOWN    &kp PG_UP   &kp END          &kp SLCK       &kp CLCK
-&trans  &kp KP_MULTIPLY  &kp KP_N4  &kp KP_N5  &kp KP_N6  &kp KP_PLUS   &kp LEFT      &kp DOWN         &kp UP      &kp RIGHT        &kp INS        &kt PAUSE_BREAK
+&trans  &kp KP_MULTIPLY  &kp KP_N4  &kp KP_N5  &kp KP_N6  &kp KP_PLUS   &kp LEFT      &kp DOWN         &kp UP      &kp RIGHT        &kp INS        &kp PAUSE_BREAK
 &trans  &kp KP_N0        &kp KP_N1  &kp KP_N2  &kp KP_N3  &kp KP_DOT    &kp C_VOL_DN  &kp C_VOLUME_UP  &kp K_MUTE  &kp PRINTSCREEN  &kp RIGHT_ALT  &kp RCTRL
                                     &trans     &trans     &trans        &trans        &trans           &trans
             >;
