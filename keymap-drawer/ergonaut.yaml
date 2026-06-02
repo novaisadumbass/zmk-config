@@ -1,7 +1,7 @@
 layout: {zmk_keyboard: ergonaut}
 layers:
   MAIN:
-  - {t: '[', h: ESCAPE}
+  - {t: '[', h: '4'}
   - Q
   - W
   - E
@@ -12,20 +12,20 @@ layers:
   - I
   - O
   - P
-  - {t: ']', h: BACKSPACE}
-  - {t: '`', h: Ctrl}
-  - A
-  - S
+  - {t: ']', h: '4'}
+  - Shift
+  - {t: A, h: toggle}
+  - {t: S, h: toggle}
   - D
   - F
-  - {t: G, h: LEFT WIN}
+  - G
   - H
   - J
   - K
   - L
   - ;
-  - {t: '''', h: Ctrl}
-  - {t: '-', h: Alt}
+  - {t: '''', h: LEFT WIN}
+  - Ctrl
   - Z
   - X
   - C
@@ -36,93 +36,93 @@ layers:
   - ','
   - .
   - /
-  - {t: \, h: Alt}
+  - {t: \, h: RIGHT ALT}
   - {t: ↹, h: NUM}
-  - {t: ␣, h: Shift}
-  - {t: ⏎, h: SYM}
+  - {t: ESCAPE, h: SYM}
+  - {t: ␣, h: toggle}
+  - ⏎
   - {t: BACKSPACE, h: SYM}
-  - {t: ␣, h: Shift}
   - {t: ⌦, h: NUM}
   SYM:
-  - F1
-  - F2
-  - F3
-  - F4
-  - F5
-  - F6
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - Home
+  - PAGE DOWN
+  - Page Up
+  - End
   - '7'
   - '8'
   - '9'
   - +
-  - '='
-  - F12
-  - F7
-  - F8
-  - F9
-  - F10
-  - F11
-  - F12
+  - '-'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - ←
+  - ↓
+  - ↑
+  - →
   - '4'
   - '5'
   - '6'
-  - '-'
+  - '='
   - '*'
-  - {t: '-', h: Ctrl}
-  - {t: '=', h: Alt}
+  - {t: /, h: toggle}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - '1'
   - '2'
   - '3'
-  - (
-  - )
-  - '1'
-  - '2'
-  - '3'
-  - '0'
-  - /
   - .
+  - '0'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   NUM:
-  - {t: KP NUM, h: Gui}
+  - {t: ▽, type: trans}
   - KP SLASH
   - KP 7
   - KP 8
   - KP 9
   - KP MINUS
-  - Vol Up
   - Home
-  - Print Scrn
+  - PAGE DOWN
   - Page Up
+  - End
   - SLCK
   - CLCK
-  - {t: '=', h: Ctrl}
+  - {t: ▽, type: trans}
   - KP MULTIPLY
   - KP 4
   - KP 5
   - KP 6
   - KP PLUS
-  - LEFT ARROW
-  - DOWN ARROW
+  - ←
+  - ↓
   - ↑
   - →
   - Insert
-  - {t: APP, h: Ctrl}
-  - Alt
+  - {t: Pause Break, h: toggle}
+  - {t: ▽, type: trans}
   - KP 0
   - KP 1
   - KP 2
   - KP 3
   - KP DOT
   - Vol Down
-  - End
+  - VOLUME UP
   - MUTE
-  - Page Down
-  - Pause Break
-  - Alt
+  - PRINTSCREEN
+  - RIGHT ALT
+  - Ctrl
   - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -167,8 +167,51 @@ layers:
   - ''
   - Reset
   - {type: held}
-  - ''
   - {type: held}
+  - {t: ▽, type: trans}
   - ''
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  '4':
+  - {type: held}
+  - '1'
+  - '2'
+  - '3'
+  - '4'
+  - '5'
+  - '6'
+  - '7'
+  - '8'
+  - '9'
+  - '0'
+  - {t: ▽, type: trans}
+  - F1
+  - F2
+  - F3
+  - F4
+  - F5
+  - F6
+  - F7
+  - F8
+  - F9
+  - F10
+  - F11
+  - F12
+  - Esc
+  - '`'
+  - ;
+  - ''''
+  - /
+  - \
+  - '['
+  - ']'
+  - ','
+  - .
+  - '-'
+  - '='
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
