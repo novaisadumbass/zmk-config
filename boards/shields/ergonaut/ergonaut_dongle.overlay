@@ -1,32 +1,16 @@
-// This file was generated from a template. Edit it to match your keyboard.
-// See https://zmk.dev/docs/development/hardware-integration/new-shield for more
-// instructions.
-
 #include <dt-bindings/zmk/matrix_transform.h>
-
-#include "ergonaut-layouts.dtsi"
-
-//&ergonaut_one_layout {
-//    transform = <&default_transform>;
-//};
 
 / {
     chosen {
-        //zmk,kscan = &kscan0; meow meow poke around this a bit
-        zmk,physical-layout = &default_layout;
+        zmk,kscan = &mock_kscan;
+	zmk,physical-layout = &physical_layout0;
     };
 
-    kscan: kscan {
-        compatible = "zmk,kscan-gpio-matrix";
-        diode-direction = "col2row";
-        wakeup-source;
-
-        row-gpios
-		= <&xiao_d 10 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
-		, <&xiao_d  9 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
-		, <&xiao_d  8 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
-		, <&xiao_d  7 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
-            ;
+    mock_kscan: mock_kscan_0 {
+        compatible = "zmk,kscan-mock";
+        columns = <0>;
+        rows = <0>;
+        events = <0>;
     };
 
     default_transform: default_transform {
@@ -48,19 +32,10 @@
                                     RC(3,3) RC(3,4) RC(3,5)  RC(3,11) RC(3,10) RC(3,9)
             >;
     };
+
+    physical_layout0: physical_layout_0 {
+        compatible = "zmk,physical-layout";
+        display-name = "Default Layout";
+        transform = <&default_transform>;
+    };
 };
-
-//add fast battery charging?
-
-&xiao_spi { status = "disabled"; };
-&xiao_i2c { status = "disabled"; };
-&xiao_serial { status = "disabled"; };
-//
-//&gpio0 {
-//    fastbatcharge: fast-battery-charge {
-//        gpio-hog;
-//        gpios = <13 GPIO_ACTIVE_HIGH>;
-//        output-low;
-//        line-name = "Fast Battery Charge";
-//    };
-//};

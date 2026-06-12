@@ -21,5 +21,11 @@
 include:
   - board: seeeduino_xiao_ble
     shield: ergonaut_left
+    cmake-args: -DCONFIG_ZMK_SPLIT=y -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=n
   - board: seeeduino_xiao_ble
     shield: ergonaut_right
+    cmake-args: -DCONFIG_ZMK_SPLIT=y -DCONFIG_ZMK_SPLIT_ROLE_CENTRAL=n
+  - board: seeeduino_xiao_ble
+    shield: ergonaut_dongle
+  - board: seeeduino_xiao_ble
+    shield: settings_reset
